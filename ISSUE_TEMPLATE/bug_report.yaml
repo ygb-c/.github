@@ -1,0 +1,25 @@
+name: "🐛 Bug Report"
+description: "서비스 중 발생한 버그나 에러를 제안합니다."
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: "🚨 에러 상황 설명"
+      description: "어떤 상황에서 어떤 버그가 발생했나요?"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "🔄 재현 방법"
+      description: "어떻게 하면 해당 버그를 똑같이 겪을 수 있는지 순서대로 적어주세요."
+      value: |
+        1. 
+        2. 
+  - type: textarea
+    id: expected
+    attributes:
+      label: "🎯 기대 결과"
+      description: "원래대로라면 어떻게 작동해야 하나요?"
