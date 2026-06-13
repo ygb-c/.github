@@ -1,0 +1,35 @@
+name: "🚀 Feature Request"
+description: "새로운 기능 개발이나 개선 사항을 제안합니다."
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 💡 작업 시작 전 Issue를 먼저 생성해 주세요!
+  - type: textarea
+    id: description
+    attributes:
+      label: "📋 기능 설명"
+      description: "어떤 기능을 개발하려고 하나요? 구체적으로 적어주세요."
+      placeholder: "예시: 타임라인 화면에 사용한 기술 스택 태그 렌더링 기능 추가"
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "✅ 할 일 목록 (Todo List)"
+      description: "이 이슈를 완료하기 위해 해야 할 하위 작업들을 적어주세요."
+      value: |
+        - [ ] 
+        - [ ] 
+  - type: dropdown
+    id: Assignee
+    attributes:
+      label: "👤 담당 파트"
+      options:
+        - "A (전처리/데이터 소스)"
+        - "B (LangChain/ChromaDB)"
+        - "C (FastAPI/Web 풀스택)"
+    validations:
+      required: true
