@@ -23,13 +23,3 @@ body:
       value: |
         - [ ] 
         - [ ] 
-  - type: dropdown
-    id: Assignee
-    attributes:
-      label: "👤 담당 파트"
-      options:
-        - "A (전처리/데이터 소스)"
-        - "B (LangChain/ChromaDB)"
-        - "C (FastAPI/Web 풀스택)"
-    validations:
-      required: true
